@@ -1,27 +1,37 @@
-# Air Passenger Data - Time Series Analysis - SARIMAX
+# ✈️ Air Passengers Time Series Forecasting
 
-**Complete Video Tutorial:** https://youtu.be/H6UEywvWpn0
+A time series forecasting project to predict monthly air passenger traffic using SARIMA modeling. The project analyzes historical trends and seasonality, forecasts future capacity, and validates model performance using statistical tests.
 
-# Dataset Information
+---
 
-The dataset provides monthly totals of a US airline passengers from 1949 to 1960. The objective is to forecast 24 months based on the historical data using ARIMA.
+## 🧰 Technologies Used
 
-# Attribute Information:
+- Python
+- Statsmodels
+- Pandas, NumPy, Matplotlib, Seaborn
+- SARIMA (Seasonal ARIMA)
+- Time Series Analysis
 
-Month - Month of the Year \
-Passengers - Total number of passengers travelled on that particular month.
+---
 
-**Download link:** https://www.kaggle.com/datasets/rakannimer/air-passengers
+## 📌 Features
 
-# Libraries
+- **SARIMA Modeling**  
+  Built and tuned a seasonal SARIMA model `(2,1,1)(1,0,3,12)` for forecasting passenger traffic based on monthly time series data.
 
-<li>pandas
-<li>matplotlib
-<li>seaborn
-<li>scikit-learn
-<li>statsmodels
+- **Capacity Forecasting**  
+  Forecasted air passenger traffic 24 months into the future with 95% confidence intervals.
 
-# Algorithms
+- **Trend and Seasonality Detection**  
+  Identified strong 12-month seasonal patterns and long-term upward trends through exploratory data analysis (EDA).
 
-<li>SARIMAX
- 
+- **Model Validation**  
+  Used Augmented Dickey-Fuller (ADF) test for stationarity and residual analysis to evaluate model assumptions and performance.
+
+---
+
+## 📈 Results
+
+- Accurate 2-year forecast of passenger volumes
+- Visualization of historical vs. predicted trends
+- Residual plots confirming model adequacy
